@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+*{
+    box-sizing: border-box; 
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    font-family: 'Varela Round', sans-serif;
+    overflow: hidden;
+    background-color: #22282c;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 300ms ease-in-out;
+  }
+  
+  /* Change background on mouse-over */
+  .navbar a:hover {
+    background: #ddd;
+    color: black;
+  }
+
+
+.introGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #22282c
+}
+
+.project{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #22282c
+}
+
+.L0{
+    height: 90vh;
+    grid-column: 1/2;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.R0{
+    height: 90vh;
+    grid-column: 2/3;
+    background-image: url('CSnip.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    line-height: 100vh;
+} 
+
+#headerText{
+    color: white;
+    font-size: 5vmin;
+    font-family: 'Varela Round', sans-serif;
+    transition: 300ms ease-in-out;
+}
+
+#headerText:hover{
+    transform: scale(1.025);
+}
+
+.headerDesc{
+    color: white;
+    font-size: 2.5vmin;
+    font-family: 'Varela Round', sans-serif;
+    vertical-align: middle;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-bottom: 1vh;
+    transition: 300ms ease-in-out;
+}
+
+#projectsHeader{
+    text-align: center;
+    color: white;
+    font-size: 2vmin;
+    font-family: 'Varela Round', sans-serif;
+    height: 10vh;
+    padding-bottom: 5vh;
+    transition: 300ms ease-in-out;
+}
+
+#projectsHeader:hover{
+    transform: scale(1.025);
+}
+
+hr{
+    opacity: 0.2;
+}
+
+#projectsHeaderDiv{
+    grid-column: 1/3;
+    text-align: center;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectTitle{
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 2.5vmin;
+    
+}
+
+.projectDesc{
+    text-align: center;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 2vmin;
+    width: 50vw;
+}
+
+.image{
+    border-radius: 5px;
+}
+
+#img1{
+    height: 25vh;
+}
+
+#img2{
+    height: 30vh;
+}
+
+
