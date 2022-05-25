@@ -8,7 +8,7 @@
 .navbar {
     font-family: 'Varela Round', sans-serif;
     overflow: hidden;
-    background-color: #22282c;
+    background-color: #22272e;
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
@@ -35,7 +35,7 @@
 .introGrid{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: #22282c
+    background-color: #22272e
 }
 
 .L0{
@@ -92,12 +92,12 @@ hr{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #22282c
+    background-color: #22272e
 }
 
 #projectsHeader{
     text-align: center;
-    color: white;
+    color: #adbac7;
     font-size: 2vmin;
     font-family: 'Varela Round', sans-serif;
     height: 10vh;
@@ -180,7 +180,7 @@ hr{
 .slideshow-container {
     height: 90vh;
     position: relative;
-    background-color: #22282c;
+    background-color: #22272e;
 }
 
 /* Next & previous buttons */
