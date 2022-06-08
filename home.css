@@ -51,17 +51,17 @@
 .R0{
     height: 90vh;
     grid-column: 2/3;
-    background-image: url('CSnip.svg');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
     text-align: center;
-    line-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
 } 
 
 #headerText{
     color: white;
-    font-size: 5vmin;
+    font-size: 6vmin;
     font-family: 'Varela Round', sans-serif;
     transition: 300ms ease-in-out;
 }
@@ -175,6 +175,7 @@ hr{
 
 #img2{
     height: 30vh;
+    max-width: 75vw;
 }
 
 .slideshow-container {
@@ -276,4 +277,27 @@ hr{
       opacity: 1;
     }
   }
+
+  .icons{
+    width: 4vw;
+    height: 4vw;
+    fill: white;
+    transition: 300ms ease-in-out;
+  }
+
+  .icons:hover{
+    transform: scale(1.1);
+    
+}
+
+  .socials{
+    font-size: 2vmin;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+  }
+
+
 
