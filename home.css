@@ -66,6 +66,13 @@
     transition: 300ms ease-in-out;
 }
 
+#insertLine{
+  color: white;
+  font-size: 6vmin;
+  font-family: 'Varela Round', sans-serif;
+  transition: 300ms ease-in-out;
+}
+
 #headerText:hover{
     transform: scale(1.025);
 }
@@ -156,11 +163,6 @@ hr{
     font-size: 2vmin;
     width: 50vw;
     cursor: pointer;
-}
-
-.projectsSrc:hover{
-  transition: 300ms ease-in-out;
-  transform: scale(1.025);
 }
 
 .image{
@@ -353,3 +355,106 @@ hr{
     }
   }
 
+/* Mobile styles */
+@media screen and (max-width: 600px) {
+
+  .introGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #22272e
+}
+
+.L0{
+    height: 35vh;
+    grid-column: 1/3;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.R0{
+    height: 55vh;
+    grid-column: 1/3;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
+} 
+
+#mediaHide{
+  display: none;
+} 
+
+.icons{
+  width: 18vw;
+  height: 18vw;
+  fill: white;
+  transition: 300ms ease-in-out;
+}
+
+#headerText{
+  color: white;
+  font-size: 10vmin;
+  font-family: 'Varela Round', sans-serif;
+  transition: 300ms ease-in-out;
+  padding-top: 6vh;
+}
+
+.headerDesc{
+  color: white;
+  font-size: 4vmin;
+  font-family: 'Varela Round', sans-serif;
+  vertical-align: middle;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-bottom: 8vh;
+  transition: 300ms ease-in-out;
+}
+
+.projectDesc{
+  -webkit-animation: backInUp .7s;
+  animation: backInUp .7s;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+
+  text-align: center;
+  color: white;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 3.3vmin;
+  width: 65vw;
+  padding-top: 3vh;
+}
+
+.projectSrc{
+  -webkit-animation: backInUp .7s;
+  animation: backInUp .7s;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+
+  text-align: center;
+  color: #adbac7;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 3.1vmin;
+  width: 65vw;
+  cursor: pointer;
+}
+
+.projectTitle{
+  -webkit-animation: backInLeft .7s;
+  animation: backInLeft .7s;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+
+  padding-top: 20px;
+  text-align: center;
+  color: white;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 8vmin;
+  padding-bottom: 3vh;
+}
+
+}
