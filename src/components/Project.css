@@ -5,8 +5,8 @@
   align-items: stretch;
   padding: 1.75rem;
   border-radius: 20px;
-  background: rgba(40, 44, 63, 0.9);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--crust);
+  border: 2px solid var(--border);
 }
 
 .Project-thumbnail {
@@ -27,7 +27,7 @@
 }
 
 .Project-thumbnail--empty {
-  border: 1px dashed rgba(255, 255, 255, 0.12);
+  border: 1px dashed var(--border);
 }
 
 .Project-thumbnailPlaceholder {

@@ -2,8 +2,11 @@
 
 :root {
   color-scheme: dark;
-  --bg: #303446;
-  --surface: #363a4f;
+  --crust: #232634;
+  --mantle: #292C3C;
+  --base: #303446;
+  --surface0: #414559;
+  --surface1: #51576d;
   --surface-alt: #494d6b;
   --text: #c6d0f5;
   --subtext: #b8c0e0;
@@ -29,7 +32,7 @@ body {
   font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
   background: radial-gradient(circle at top, rgba(140, 170, 238, 0.18), transparent 28%),
     radial-gradient(circle at bottom right, rgba(245, 169, 127, 0.12), transparent 30%),
-    var(--bg);
+    var(--base);
   color: var(--text);
 }
 
@@ -43,12 +46,10 @@ body {
 }
 
 .App-home {
-  width: min(920px, 100%);
+  width: min(1020px, 100%);
   padding: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 24px;
-  background: linear-gradient(180deg, rgba(54, 58, 79, 0.96), rgba(48, 52, 70, 0.96));
-  box-shadow: 0 24px 80px rgba(16, 20, 44, 0.4);
+  display: grid;
+  gap: 2rem;
 }
 
 .App-home h1 {
@@ -63,8 +64,8 @@ body {
   gap: 1.5rem;
   padding: 2rem;
   border-radius: 20px;
-  background: rgba(30, 34, 51, 0.75);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--mantle);
+  border: 0px solid var(--border);
   text-align: left;
 }
 
@@ -98,8 +99,8 @@ body {
   gap: 0.75rem;
   padding: 0.95rem 1.2rem;
   border-radius: 16px;
-  background: rgba(56, 61, 91, 0.95);
-  border: 1px solid rgba(140, 170, 238, 0.16);
+  background: var(--surface0);
+  border: 2px solid var(--border);
   color: var(--text);
   text-decoration: none;
   font-weight: 500;
@@ -109,23 +110,29 @@ body {
 .App-link-card:hover,
 .App-link-card:focus-visible {
   transform: translateY(-2px);
-  background: rgba(76, 84, 123, 0.95);
-  border-color: rgba(140, 170, 238, 0.28);
+  background: var(--surface1);
+  border: 2px solid var(--mauve);
 }
 
 .App-link-icon {
   font-size: 1.2rem;
 }
 
+.App-projects-card {
+  padding: 2rem;
+  border-radius: 20px;
+  background: var(--mantle);
+  border: 0px solid var(--border);
+}
+
 .App-projects {
-  margin-top: 2.5rem;
   display: grid;
   gap: 1.5rem;
   text-align: left;
 }
 
 .App-projects h2 {
-  margin: 0;
+  margin: 0 0 1rem;
   font-size: clamp(1.75rem, 3vw, 2.5rem);
 }
 
