@@ -6,10 +6,17 @@
   --surface: #363a4f;
   --surface-alt: #494d6b;
   --text: #c6d0f5;
-  --subtext: #b8c0f4;
+  --subtext: #b8c0e0;
   --accent: #8caaee;
   --accent-strong: #f5a97f;
   --border: #51576d;
+  --flamingo: #f0c6c6;
+  --mauve: #c6a0f6;
+  --mauve: #c6a0f6;
+  --red: #ed8796;
+  --blue: #8aadf4;
+  --green: #a6da95;
+  --yellow: #eed49f;
 }
 
 * {
@@ -51,29 +58,75 @@ body {
   color: var(--accent);
 }
 
-.App-clock-card {
+.App-intro {
   display: grid;
-  gap: 1rem;
+  gap: 1.5rem;
   padding: 2rem;
   border-radius: 20px;
   background: rgba(30, 34, 51, 0.75);
   border: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: left;
 }
 
-.App-date,
-.App-time {
+.App-intro-top {
   margin: 0;
-}
-
-.App-date {
-  font-size: 1.35rem;
-  color: var(--subtext);
-}
-
-.App-time {
-  font-size: clamp(3rem, 7vw, 4rem);
-  font-weight: 700;
+  font-size: clamp(1.6rem, 2.4vw, 2.2rem);
   color: var(--text);
+}
+
+.App-name {
+  color: var(--red);
+  font-weight: 700;
+}
+
+.App-intro-copy {
+  margin: 0;
+  color: var(--subtext);
+  line-height: 1.8;
+}
+
+.App-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.App-link-card {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.95rem 1.2rem;
+  border-radius: 16px;
+  background: rgba(56, 61, 91, 0.95);
+  border: 1px solid rgba(140, 170, 238, 0.16);
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+  transition: transform 160ms ease, background-color 160ms ease, border-color 160ms ease;
+}
+
+.App-link-card:hover,
+.App-link-card:focus-visible {
+  transform: translateY(-2px);
+  background: rgba(76, 84, 123, 0.95);
+  border-color: rgba(140, 170, 238, 0.28);
+}
+
+.App-link-icon {
+  font-size: 1.2rem;
+}
+
+.App-projects {
+  margin-top: 2.5rem;
+  display: grid;
+  gap: 1.5rem;
+  text-align: left;
+}
+
+.App-projects h2 {
+  margin: 0;
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
 }
 
 @media (max-width: 640px) {
@@ -81,11 +134,16 @@ body {
     padding: 1.5rem;
   }
 
-  .App-clock-card {
+  .App-intro {
     padding: 1.5rem;
   }
 
-  .App-time {
-    font-size: 2.5rem;
+  .App-links {
+    justify-content: stretch;
+  }
+
+  .App-link-card {
+    flex: 1 1 100%;
+    justify-content: center;
   }
 }
