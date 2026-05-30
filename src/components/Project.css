@@ -1,4 +1,5 @@
 .Project {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1.3fr;
   gap: 1.5rem;
@@ -7,6 +8,28 @@
   border-radius: 20px;
   background: var(--crust);
   border: 2px solid var(--border);
+}
+
+.Project-redirect {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--surface0);
+  color: var(--mauve);
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: 0.2s ease-in-out;
+}
+
+.Project-redirect:hover {
+  border: 2px solid var(--mauve);
+  background: var(--surface1);
 }
 
 .Project-thumbnail {

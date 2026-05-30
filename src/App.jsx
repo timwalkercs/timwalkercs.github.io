@@ -67,6 +67,7 @@ function App() {
               description="MxMatrix is a web-based application designed for mechanical keyboard enthusiasts to explore, filter, and view detailed information about mechanical keyboard switches. Whether you're building a custom board or researching switch specs, MxMatrix makes it easy to find the right switch for your needs."
               thumbnail={mxSS}
               altText="Screenshot of MxMatrix application showing switch details and filters"
+              redirectUrl="https:mxmatrix.xyz"
             />
             <Project
               title="3D Printer Failure Detection System"
@@ -74,6 +75,7 @@ function App() {
               description="Live 3D printer monitoring software with real-time failure detection."
               thumbnail={printerSS}
               altText="Image of a 3D printer failure."
+              redirectUrl="https://github.com/timwalkercs/3D-Print-Failure-Detection"
             />
           </div>
         </section>
