@@ -1,29 +1,53 @@
 import './Project.css';
 
-function Project({ title, technologies, description, thumbnail, altText, redirectUrl }) {
-  const techText = Array.isArray(technologies)
-    ? technologies.join(', ')
-    : technologies;
-
+function Project({
+  title,
+  subtitle,
+  technologies,
+  bullets,
+  thumbnail,
+  altText,
+  repoUrl,
+  siteUrl,
+}) {
   return (
     <article className="Project">
-      {redirectUrl && (
-        <a href={redirectUrl} target="_blank" rel="noreferrer" className="Project-redirect" aria-label="Redirect">
-          ↗
-        </a>
-      )}
-      <div className={`Project-thumbnail ${thumbnail ? '' : 'Project-thumbnail--empty'}`}>
-        {thumbnail ? (
-          <img src={thumbnail} alt={altText || title} className="Project-thumbnailImage" />
-        ) : (
-          <div className="Project-thumbnailPlaceholder">Thumbnail</div>
-        )}
+      <div className="Project-media">
+        <img src={thumbnail} alt={altText || title} loading="lazy" />
       </div>
 
       <div className="Project-content">
-        <h2 className="Project-title">{title}</h2>
-        <p className="Project-tech">{techText}</p>
-        <p className="Project-description">{description}</p>
+        <header className="Project-head">
+          <h3 className="Project-title">{title}</h3>
+          {subtitle && <p className="Project-subtitle">{subtitle}</p>}
+        </header>
+
+        <ul className="Bullets">
+          {bullets.map((bullet) => (
+            <li key={bullet}>{bullet}</li>
+          ))}
+        </ul>
+
+        <ul className="Tags">
+          {technologies.map((tech) => (
+            <li key={tech} className="Tag">
+              {tech}
+            </li>
+          ))}
+        </ul>
+
+        <div className="Project-links">
+          {repoUrl && (
+            <a href={repoUrl} target="_blank" rel="noreferrer">
+              GitHub <span aria-hidden="true">↗</span>
+            </a>
+          )}
+          {siteUrl && (
+            <a href={siteUrl} target="_blank" rel="noreferrer">
+              Website <span aria-hidden="true">↗</span>
+            </a>
+          )}
+        </div>
       </div>
     </article>
   );
